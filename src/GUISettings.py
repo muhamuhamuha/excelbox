@@ -10,7 +10,7 @@ class GUISettings:
 
     # general settings
     file_dir: Path = Path(__file__).parents[0]
-    bg_color: str = 'gray23'
+    bg_color: str = 'gray88'
     font_color: str = 'white'
     geo: str = '300x180'
 
