@@ -1,16 +1,4 @@
-from pathlib import Path
-
-from tkinter.ttk import (
-    Combobox,
-)
-from tkinter import (
-    Tk,
-    Button,
-    Label,
-    StringVar,
-    PhotoImage,
-    LabelFrame,
-)
+from tkinter import Tk
 
 from GUISettings import GUISettings
 
@@ -23,4 +11,4 @@ class ExcelBox(Tk):
         self.title('ExcelBox')
         self.configure(background=gui.bg_color)
         self.geometry(gui.geo)
-        self.mainloop()
+        self.mainloop()    
