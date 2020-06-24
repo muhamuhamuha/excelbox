@@ -14,7 +14,10 @@ class ExcelBox(Tk):
         
         super().__init__()
         self.title('ExcelBox' if title is None else title)
-        self.configure(background=gui.bg_color if color is None else color)
+        self.configure(
+            background=gui.bg_color if color is None else color,
+            highlightbackground='dark green',
+        )
         self.geometry(gui.geo if geometry is None else geometry)
         self.mainloop()
 
@@ -26,3 +29,5 @@ class ExcelBox(Tk):
             geometry: str = None,
         ):
         return cls(title, color, geometry)
+
+a = ExcelBox()
